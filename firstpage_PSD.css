@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.wrap .top-list{
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 10px;
+}
+.wrap .top-list p{
+    color: gray;
+    padding: 0px 10px 0px 10px;
+}
+.fb-color{
+    color: #4460a0;
+}
+.tw-color{
+    color: #00aaec;
+}
+.wrap .top-list a{
+    text-decoration: none;
+    padding: 10px;
+}
+.wrap .top-list a:hover > span{
+    color: red;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrap .menu .menu-logo{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    display: block;
+    width: 224px;
+    height: 50px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.wrap .menu .menu-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 25px 0px;
+}
+.wrap .menu .menu-list a{
+    padding: 10px;
+    text-decoration: none;
+    color: #00cc99;
+    font-weight: bold;
+}
+.wrap .menu .menu-list a:hover{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.wrap .banner{
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png);
+    height: 346px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.wrap .banner .banner-content{
+    width: 100%;
+    padding: 10px;
+    line-height: 60px;
+    font-size: 50px;
+    color: white;
+    background: linear-gradient(to right, rgba(1, 0, 0, 1), rgba(1, 0, 0, 0.1)  );
+}
+.content .content-item{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.item-list{
+    width: 300px;
+    box-shadow: 1px 5px 10px gray;
+    border-radius: 2px;
+}
+.item-list h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.item-list p{
+    line-height: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+.item-list .jQ-list{
+    display: flex;
+    flex-direction:column;
+    line-height: 20px;
+    padding: 10px;
+}
+.compare .compare-difference{
+    display: flex;
+    justify-content: center;
+}
+.compare p{
+    font-size: 36px;
+    text-align: center;
+    padding: 10px;
+}
+.compare-difference td,th{
+    text-align: left;
+    padding: 10px 55px 5px 10px;
+    font-size: 20px;
+    border-bottom: 2px solid gray;
+}
+.compare-difference th{
+    font-weight: bold;
+}
+.emphasize{
+    color: #7dc6af;
+    font-weight: bold;
+}
+.form{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    background: linear-gradient(#00644b, #009872);
+}
+.form p{
+    padding-top: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+.form-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.form-list .massage{
+    width: 500px;
+}
+.form-list .massage textarea{
+    margin-left: 20px;
+    width: 400px;
+    height: 300px;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+.form-list .personal{
+    width: 450px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.form-list .personal input{
+    width: 90%;
+    border: 1px solid black;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+.form-list .personal .submit{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.form-list .personal .submit input{
+    width: 200px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    background: #00cc99;
+    border: 2px solid #00cc99;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px black;
+}
+.form-list .personal .submit input:hover{
+    color: #00654c;
+}
+.wrap .footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wrap .footer li{
+    padding: 5px;
+}
+.connection{
+    color: #e55995;
+}
+
+
+
